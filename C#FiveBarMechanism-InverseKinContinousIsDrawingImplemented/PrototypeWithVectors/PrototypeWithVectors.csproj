@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD5E83CE-D37A-4719-AA60-3AAEDA178A72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PrototypeWithVectors</RootNamespace>
+    <AssemblyName>PrototypeWithVectors</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\..\2nd year\ZedGraphApplication\Dependencies\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CircularArc.cs" />
+    <Compile Include="CurveClass.cs" />
+    <Compile Include="FiveBarMechanism.cs" />
+    <Compile Include="GlobalClass.cs" />
+    <Compile Include="LetterClass.cs" />
+    <Compile Include="Letters\LetterClass0.cs" />
+    <Compile Include="Letters\LetterClass1.cs" />
+    <Compile Include="Letters\LetterClass2.cs" />
+    <Compile Include="Letters\LetterClass3.cs" />
+    <Compile Include="Letters\LetterClass4.cs" />
+    <Compile Include="Letters\LetterClass5.cs" />
+    <Compile Include="Letters\LetterClass6.cs" />
+    <Compile Include="Letters\LetterClass7.cs" />
+    <Compile Include="Letters\LetterClass9.cs" />
+    <Compile Include="Letters\LetterClassA.cs" />
+    <Compile Include="Letters\LetterClassB.cs" />
+    <Compile Include="Letters\LetterClassC.cs" />
+    <Compile Include="Letters\LetterClassD.cs" />
+    <Compile Include="Letters\LetterClassE.cs" />
+    <Compile Include="Letters\LetterClassF.cs" />
+    <Compile Include="Letters\LetterClassG.cs" />
+    <Compile Include="Letters\LetterClassH.cs" />
+    <Compile Include="Letters\LetterClassI.cs" />
+    <Compile Include="Letters\LetterClassJ.cs" />
+    <Compile Include="Letters\LetterClassK.cs" />
+    <Compile Include="Letters\LetterClassL.cs" />
+    <Compile Include="Letters\LetterClassM.cs" />
+    <Compile Include="Letters\LetterClassN.cs" />
+    <Compile Include="Letters\LetterClassO.cs" />
+    <Compile Include="Letters\LetterClassP.cs" />
+    <Compile Include="Letters\LetterClassQ.cs" />
+    <Compile Include="Letters\LetterClassR.cs" />
+    <Compile Include="Letters\LetterClassS.cs" />
+    <Compile Include="Letters\LetterClassT.cs" />
+    <Compile Include="Letters\LetterClassU.cs" />
+    <Compile Include="Letters\LetterClassV.cs" />
+    <Compile Include="Letters\LetterClassW.cs" />
+    <Compile Include="Letters\LetterClassX.cs" />
+    <Compile Include="Letters\LetterClassY.cs" />
+    <Compile Include="Letters\LetterClassZ.cs" />
+    <Compile Include="Letters\LetterClass8.cs" />
+    <Compile Include="PrototypeCmdDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrototypeCmdDlg.Designer.cs">
+      <DependentUpon>PrototypeCmdDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StraightLine.cs" />
+    <Compile Include="VectorClass.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PrototypeCmdDlg.resx">
+      <DependentUpon>PrototypeCmdDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
